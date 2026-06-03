@@ -4,274 +4,506 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/thumb_up.png" type="image/x-icon">
-    <title>Currículo Profissional - George Rotteny</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>George Rotteny - Programador Sênior PHP & Laravel</title>
+    <meta name="description" content="Currículo profissional de George Rotteny, Programador Sênior especializado em PHP, Laravel e arquitetura de sistemas robustos e eficientes.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        .profile-img-container {
-            width: 150px;
-            height: 150px;
-            overflow: hidden;
-            border-radius: 50%;
-            margin: 0 auto; /* Center the image */
-        }
-        .profile-img-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Ensures the image covers the area without distortion */
-        }
-        /* Custom spacing for sections */
-        .section-spacing {
-            margin-bottom: 2.5rem; /* Increased spacing for clarity */
-        }
-        .section-title {
-            margin-bottom: 1.5rem;
-            border-bottom: 1px solid #e9ecef; /* Light gray border for separation */
-            padding-bottom: 0.5rem;
-            font-weight: 600; /* Slightly bolder titles */
-        }
-    </style>
+    
+    <!-- Custom Style System -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container py-4">
-        <div class="row align-items-center text-center text-md-start mb-5">
-            <div class="col-md-3 mb-3 mb-md-0">
-                <div class="profile-img-container shadow-sm">
-                    <img src="img/grotteny.jpg" title="George Rotteny" alt="George Rotteny">
-                </div>
-            </div>
-            <div class="col-md-9">
-                <h1 class="display-4 fw-bold">George Rotteny</h1>
-                <h2 class="text-secondary fs-4">Programador Sênior</h2>
-            </div>
-        </div>
 
-        <div class="row row-cols-1 row-cols-md-3 g-3 text-center mb-5 py-4 bg-light rounded shadow-sm">
-            <div class="col">
-                <div class="p-2">
-                    <small class="text-muted">Telefone</small><br>
-                    <a href="https://wa.me/5586994281351" class="text-decoration-none text-dark fw-bold" target="_blank">
-                        <i class="fa-brands fa-whatsapp me-1"></i> (86) 99428-1351
-                    </a>
+    <main class="container">
+        
+        <!-- Header Banner Profile -->
+        <header class="card-glass profile-header">
+            <div class="profile-avatar-container">
+                <img src="img/grotteny.png" alt="George Rotteny" class="profile-avatar">
+            </div>
+            <div class="profile-title-area">
+                <h1>George Rotteny</h1>
+                <div class="profile-subtitle">
+                    <i class="fa-solid fa-code"></i> Programador Sênior
                 </div>
             </div>
-            <div class="col">
-                <div class="p-2">
-                    <small class="text-muted">E-mail</small><br>
-                    <a href="mailto:grotteny@hotmail.com" class="text-decoration-none text-dark fw-bold" target="_blank">
-                        <i class="fa-regular fa-envelope me-1"></i> grotteny@hotmail.com
-                    </a>
-                </div>
-            </div>
-            <div class="col">
-                <div class="p-2">
-                    <small class="text-muted">Endereço</small><br>
-                    <a href="https://www.google.com/maps/place/Parna%C3%ADba,+PI/@-2.9304019,-41.7718628,13z/data=!3m1!4b1!4m6!3m5!1s0x7ec3adcd5926c75:0x45351f9daa75bb92!8m2!3d-2.9096093!4d-41.7537178!16zL20vMDdobW4z?entry=ttu" class="text-decoration-none text-dark fw-bold" target="_blank">
-                        <i class="fa-solid fa-map-location-dot me-1"></i> Parnaíba - Piauí - Brasil
-                    </a>
-                </div>
-            </div>
-        </div>
+        </header>
 
-        <div class="row">
-            <div class="col-lg-8">
-                <section class="section-spacing">
-                    <h2 class="section-title">Resumo Profissional</h2>
-                    <p><strong>Programador PHP Sênior</strong> com sólida experiência desde 2009, especializado em desenvolvimento com **Laravel**. Apaixonado por desafios, possuo expertise em arquitetura de software, otimização de performance e liderança técnica. Com foco na qualidade da solução, busco inovar e aprimorar continuamente meus conhecimentos para entregar resultados de excelência e impulsionar o sucesso da equipe e dos projetos.</p>
-                </section>
+        <!-- Quick Info Blocks -->
+        <section class="quick-contacts">
+            <div class="contact-item" onclick="copyText('5586994281351', 'WhatsApp')" title="Clique para copiar o WhatsApp">
+                <div class="contact-icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="contact-details">
+                    <small>WhatsApp (Copiar)</small>
+                    <span>(86) 99428-1351</span>
+                </div>
+                <a href="https://wa.me/5586994281351" target="_blank" onclick="event.stopPropagation();" title="Abrir conversa no WhatsApp" style="margin-left: auto; color: var(--text-muted);">
+                    <i class="fa-solid fa-external-link-alt"></i>
+                </a>
+            </div>
 
-                <section class="section-spacing">
-                    <h2 class="section-title">Experiências Profissionais</h2>
+            <div class="contact-item" onclick="copyText('grotteny@hotmail.com', 'E-mail')" title="Clique para copiar o E-mail">
+                <div class="contact-icon">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                    <small>E-mail (Copiar)</small>
+                    <span>grotteny@hotmail.com</span>
+                </div>
+                <a href="mailto:grotteny@hotmail.com" target="_blank" onclick="event.stopPropagation();" title="Enviar e-mail" style="margin-left: auto; color: var(--text-muted);">
+                    <i class="fa-solid fa-external-link-alt"></i>
+                </a>
+            </div>
+
+            <div class="contact-item" onclick="copyText('Parnaíba - Piauí - Brasil', 'Endereço')" title="Clique para copiar o endereço">
+                <div class="contact-icon">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                </div>
+                <div class="contact-details">
+                    <small>Endereço (Copiar)</small>
+                    <span>Parnaíba - PI - Brasil</span>
+                </div>
+                <a href="https://www.google.com/maps/place/Parna%C3%ADba,+PI/@-2.9304019,-41.7718628,13z/data=!3m1!4b1!4m6!3m5!1s0x7ec3adcd5926c75:0x45351f9daa75bb92!8m2!3d-2.9096093!4d-41.7537178!16zL20vMDdobW4z?entry=ttu" target="_blank" onclick="event.stopPropagation();" title="Ver no Google Maps" style="margin-left: auto; color: var(--text-muted);">
+                    <i class="fa-solid fa-external-link-alt"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Main Body Content Grid -->
+        <div class="profile-grid">
+            
+            <!-- Left Sidebar -->
+            <aside class="sidebar">
+                
+                <!-- Skills Panel -->
+                <div class="card-glass">
+                    <h2 class="sidebar-section-title">Habilidades</h2>
                     
-                    <div class="mb-4">
-                        <h4 class="fw-bold">SafetyDocs</h4>
-                        <h5 class="text-muted mb-2">Tech Lead (2021 - Atual)</h5>
-                        <p>Contratado como Programador PHP, rapidamente promovido a Tech Lead para liderar a equipe de desenvolvimento. Foco na resolução de problemas crônicos em plataforma legada e desenvolvimento de novas funcionalidades.</p>
-                        <ul>
-                            <li>Otimizei a performance da plataforma através da implementação de **recursos assíncronos do Laravel** (envio de e-mails, execução de processos) e padronização de métodos, resultando em maior eficiência.</li>
-                            <li>Desenvolvi um sistema de registro de metadados para arquivos de upload, agilizando o levantamento de volume de documentos.</li>
-                            <li>Criei e implementei uma **wiki interna** para documentação e compartilhamento de conhecimento, otimizando as rotinas de configuração de ambiente e manutenção para a equipe.</li>
-                            <li>Desenvolvi **layouts amigáveis para relatórios de clientes** e implementei **melhorias de segurança críticas** em um sistema anteriormente exposto na web.</li>
-                            <li>Responsável pelo **processo completo de recrutamento, acompanhamento e avaliação de novos programadores**, focando na seleção de talentos e no desenvolvimento de equipes de alta performance, sempre alinhado aos objetivos da empresa.</li>
-                        </ul>
-                        <p>Liderei o **redesenvolvimento completo da plataforma**, com autonomia para corrigir falhas de projeto e implementar melhorias de performance. A entrega resultou em uma **solução robusta e atualizada**, reflexo de experiência e colaboração eficaz com a equipe e stakeholders.</p>
+                    <div class="skill-categories">
+                        <button class="filter-btn active" onclick="filterSkills('all')">Todos</button>
+                        <button class="filter-btn" onclick="filterSkills('backend')">Backend</button>
+                        <button class="filter-btn" onclick="filterSkills('frontend')">Frontend</button>
+                        <button class="filter-btn" onclick="filterSkills('db')">Bancos</button>
+                        <button class="filter-btn" onclick="filterSkills('tools')">Ferramentas</button>
                     </div>
 
-                    <div class="mb-4">
-                        <h4 class="fw-bold">Ecom</h4>
-                        <h5 class="text-muted mb-2">Analista PHP Sênior (2019-2021)</h5>
-                        <p>Primeira experiência em ambiente corporativo, atuando no setor de comercialização de energia elétrica. Desenvolvimento em um sistema proprietário sem framework conhecido, focado na criação de formulários e relatórios para atender as necessidades dos usuários.</p>
-                        <ul>
-                            <li>Desenvolvi relatórios complexos e fui responsável pela criação e manutenção de **funções em PostgreSQL**.</li>
-                            <li>Inovei e implementei uma **funcionalidade chave para visualização e filtragem de dados** que resolveu um problema crônico de usabilidade reportado por múltiplos setores.</li>
-                            <li>Concebi e desenvolvi um **serviço exclusivo para geração de relatórios**, permitindo a extração de dados para visualização em tela e envio por e-mail em formato HTML com imagens.</li>
-                            <li>Criei um sistema completo para **leitura e análise de planilhas** de vazão de barragens, fornecendo dados cruciais para a previsão de cheias/secas e auxiliando negociadores na tomada de decisão sobre compra e venda de concessões de energia.</li>
-                        </ul>
+                    <div class="skill-tags">
+                        <button class="skill-tag" data-tech="php" data-category="backend" onclick="toggleTechHighlight('php')">PHP</button>
+                        <button class="skill-tag" data-tech="laravel" data-category="backend" onclick="toggleTechHighlight('laravel')">Laravel</button>
+                        <button class="skill-tag" data-tech="node" data-category="backend" onclick="toggleTechHighlight('node')">Node.js</button>
+                        <button class="skill-tag" data-tech="api" data-category="backend" onclick="toggleTechHighlight('api')">APIs REST/SOAP</button>
+                        <button class="skill-tag" data-tech="ai" data-category="backend" onclick="toggleTechHighlight('ai')">Inteligência Artificial (IA)</button>
+                        
+                        <button class="skill-tag" data-tech="javascript" data-category="frontend" onclick="toggleTechHighlight('javascript')">JavaScript</button>
+                        <button class="skill-tag" data-tech="webix" data-category="frontend" onclick="toggleTechHighlight('webix')">Webix</button>
+                        <button class="skill-tag" data-tech="html" data-category="frontend" onclick="toggleTechHighlight('html')">HTML5</button>
+                        <button class="skill-tag" data-tech="css" data-category="frontend" onclick="toggleTechHighlight('css')">CSS3</button>
+                        
+                        <button class="skill-tag" data-tech="mysql" data-category="db" onclick="toggleTechHighlight('mysql')">MySQL</button>
+                        <button class="skill-tag" data-tech="postgres" data-category="db" onclick="toggleTechHighlight('postgres')">PostgreSQL</button>
+                        
+                        <button class="skill-tag" data-tech="git" data-category="tools" onclick="toggleTechHighlight('git')">Git / GitHub</button>
+                        <button class="skill-tag" data-tech="agile" data-category="tools" onclick="toggleTechHighlight('agile')">Scrum / Kanban</button>
                     </div>
+                </div>
 
-                    <div class="mb-4">
-                        <h4 class="fw-bold">ENC Interativa LTDA</h4>
-                        <h5 class="text-muted mb-2">Programador PHP Sênior (2011-2013 e 2016-2019)</h5>
-                        <p>Experiência fundamental no desenvolvimento, atuando com desafios tanto em front-end (JavaScript/jQuery) quanto em back-end (PHP/CodeIgniter). Responsável pela manutenção de aplicações de promoção 24/7, que geravam grande volume de dados. Desenvolvi soluções para processamento e visualização eficiente desses dados.</p>
-                        <p>No retorno em 2016, desenvolvi uma **solução escalável que reduziu o tempo de desenvolvimento** de sistemas de 7 dias para apenas 4 horas. Criei o primeiro **sistema de distribuição de números da sorte**, apto a gerenciar grandes volumes de demanda com eficiência.</p>
+                <!-- Education Panel -->
+                <div class="card-glass">
+                    <h2 class="sidebar-section-title">Educação</h2>
+                    <div class="education-list">
+                        <div class="education-item">
+                            <div class="edu-year">2011</div>
+                            <div class="edu-degree">Bacharelado em Sistemas de Informação</div>
+                            <div class="edu-school">FATEPI - Fac. de Tecnologia do Piauí</div>
+                        </div>
+                        <div class="education-item">
+                            <div class="edu-year">2018</div>
+                            <div class="edu-degree">Scrum Master</div>
+                            <div class="edu-school">Impacta Tecnologia</div>
+                        </div>
+                        <div class="education-item">
+                            <div class="edu-year">2015</div>
+                            <div class="edu-degree">MySQL PL/SQL</div>
+                            <div class="edu-school">Impacta Tecnologia</div>
+                        </div>
+                        <div class="education-item">
+                            <div class="edu-year">2015</div>
+                            <div class="edu-degree">Dev Mobile com PhoneGap</div>
+                            <div class="edu-school">Curso Online / Certificação</div>
+                        </div>
                     </div>
+                </div>
 
-                    <div class="mb-4">
-                        <h4 class="fw-bold">Buonny Gerenciamento de Riscos</h4>
-                        <h5 class="text-muted mb-2">Analista Programador Sênior (2013-2016)</h5>
-                        <p>Participei do desenvolvimento da nova plataforma de monitoramento de cargas em uma equipe de mais de 10 desenvolvedores. Desenvolvi **soluções de integração (SOAP e REST APIs)** com grandes empresas como Grupo Pão de Açúcar e LG, automatizando a inclusão de novos serviços de monitoramento.</p>
-                        <p>Atuei na manutenção de sistemas legados (PHP, Delphi) e desenvolvimento de novas soluções, gerenciando **múltiplos bancos de dados (MS SQL, PostgreSQL)**. Ganhei experiência em **controle de versão (SVN, Liquibase)** e manutenção de **servidores Linux**.</p>
-                        <p>Gerenciei equipes de projeto e atuei como mentor para novos desenvolvedores e estagiários, contribuindo para o desenvolvimento profissional dos membros da equipe.</p>
+                <!-- Languages Panel -->
+                <div class="card-glass">
+                    <h2 class="sidebar-section-title">Idiomas</h2>
+                    <div class="languages-list">
+                        <div class="lang-item">
+                            <span class="lang-name">Português</span>
+                            <span class="lang-level">Nativo</span>
+                        </div>
+                        <div class="lang-item">
+                            <span class="lang-name">Inglês</span>
+                            <span class="lang-level">Avançado</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Profiles Panel -->
+                <div class="card-glass">
+                    <h2 class="sidebar-section-title">Redes</h2>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/george-rotteny" target="_blank" class="social-link">
+                            <i class="fa-brands fa-linkedin" style="color: #0a66c2;"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/rotteny" target="_blank" class="social-link">
+                            <i class="fa-brands fa-github" style="color: #fff;"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+            </aside>
+
+            <!-- Right Content Area -->
+            <div class="main-content">
+                
+                <!-- About Me -->
+                <section class="card-glass">
+                    <h2 class="section-title">
+                        <i class="fa-regular fa-user"></i> Resumo Profissional
+                    </h2>
+                    <p class="summary-text">
+                        <strong>Programador PHP Sênior</strong> com sólida experiência desde 2009, especializado em desenvolvimento com <strong>Laravel</strong>. Apaixonado por desafios, possuo expertise em arquitetura de software, otimização de performance e liderança técnica. Com foco na qualidade da solução, busco inovar e aprimorar continuamente meus conhecimentos para entregar resultados de excelência e impulsionar o sucesso da equipe e dos projetos.
+                    </p>
+                </section>
+
+                <!-- Professional Experience Timeline -->
+                <section class="card-glass">
+                    <h2 class="section-title">
+                        <i class="fa-solid fa-briefcase"></i> Experiências Profissionais
+                    </h2>
+                    
+                    <div class="timeline">
+                        <!-- Gorila Software House -->
+                        <div class="timeline-item" data-techs="php,laravel,api,ai,javascript,html,css">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-header">
+                                <div class="job-title-company">
+                                    <h3>Gorila Software House</h3>
+                                </div>
+                                <div class="job-meta">
+                                    <span class="job-date">2024 - Atual</span>
+                                    <span class="job-role">Co-fundador & Tech Lead</span>
+                                </div>
+                            </div>
+                            <p class="job-desc">
+                                Criação da Software House focada na arquitetura de sistemas sob medida e integração inovadora de Inteligência Artificial (IA) para automação de processos corporativos.
+                            </p>
+                            <ul class="job-bullets">
+                                <li>Liderança técnica no desenvolvimento do <strong>TikBot</strong> (plataforma SaaS de atendimento multicanal automatizado) e do <strong>ACCA</strong>, implementando soluções baseadas em IA (modelos de linguagem e processamento de dados).</li>
+                                <li>Integração de APIs de inteligência artificial (LLMs) para estruturar fluxos conversacionais dinâmicos e assistentes inteligentes.</li>
+                                <li>Desenho e implementação de infraestrutura e back-end escaláveis utilizando PHP, Laravel, APIs RESTful e PostgreSQL/MySQL.</li>
+                            </ul>
+                        </div>
+
+                        <!-- SafetyDocs -->
+                        <div class="timeline-item" data-techs="php,laravel,api,html,css,git">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-header">
+                                <div class="job-title-company">
+                                    <h3>SafetyDocs</h3>
+                                </div>
+                                <div class="job-meta">
+                                    <span class="job-date">2021 - Atual</span>
+                                    <span class="job-role">Tech Lead</span>
+                                </div>
+                            </div>
+                            <p class="job-desc">
+                                Contratado como Programador PHP, rapidamente promovido a Tech Lead para liderar a equipe de desenvolvimento. Foco na resolução de problemas crônicos em plataforma legada e desenvolvimento de novas funcionalidades.
+                            </p>
+                            <ul class="job-bullets">
+                                <li>Otimizei a performance da plataforma através da implementação de recursos assíncronos do Laravel (queues, jobs, e-mails) e padronização de métodos, resultando em maior eficiência.</li>
+                                <li>Desenvolvi um sistema de registro de metadados para arquivos de upload, agilizando o levantamento de volume de documentos.</li>
+                                <li>Criei e implementei uma wiki interna para documentação e compartilhamento de conhecimento, otimizando as rotinas de configuração de ambiente e manutenção.</li>
+                                <li>Desenvolvi layouts amigáveis para relatórios de clientes e implementei melhorias de segurança críticas em sistemas anteriormente expostos.</li>
+                                <li>Responsável pelo processo completo de recrutamento, onboarding e avaliação de novos programadores, focando na formação de equipes de alta performance.</li>
+                            </ul>
+                            <p style="margin-top: 0.75rem; font-size: 0.9rem; font-style: italic; color: var(--text-muted);">
+                                Liderei o redesenvolvimento completo da plataforma, corrigindo falhas de arquitetura e entregando uma solução robusta, atualizada e performática.
+                            </p>
+                        </div>
+
+                        <!-- Ecom -->
+                        <div class="timeline-item" data-techs="php,postgres,html,css">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-header">
+                                <div class="job-title-company">
+                                    <h3>Ecom</h3>
+                                </div>
+                                <div class="job-meta">
+                                    <span class="job-date">2019 - 2021</span>
+                                    <span class="job-role">Analista PHP Sênior</span>
+                                </div>
+                            </div>
+                            <p class="job-desc">
+                                Atuação no setor de comercialização de energia elétrica. Desenvolvimento em sistema proprietário legada sem framework padrão, focado em formulários complexos e processamento massivo de dados.
+                            </p>
+                            <ul class="job-bullets">
+                                <li>Desenvolvi relatórios complexos e fui responsável pela criação e manutenção de funções/procedures em PostgreSQL.</li>
+                                <li>Inovei e implementei funcionalidade chave para visualização e filtragem de dados que resolveu problemas de usabilidade de múltiplos setores.</li>
+                                <li>Concebi e desenvolvi um microsserviço para geração de relatórios, permitindo a extração de dados e envio automático por e-mail em HTML estilizado.</li>
+                                <li>Criei um sistema completo para leitura e análise de planilhas de vazão de barragens, auxiliando na previsão de cheias/secas e na tomada de decisão sobre compra e venda de energia.</li>
+                            </ul>
+                        </div>
+
+                        <!-- ENC Interativa -->
+                        <div class="timeline-item" data-techs="php,javascript,mysql">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-header">
+                                <div class="job-title-company">
+                                    <h3>ENC Interativa LTDA</h3>
+                                </div>
+                                <div class="job-meta">
+                                    <span class="job-date">2011-13 / 2016-19</span>
+                                    <span class="job-role">Programador PHP Sênior</span>
+                                </div>
+                            </div>
+                            <p class="job-desc">
+                                Atuação fullstack com JavaScript/jQuery e PHP (CodeIgniter). Responsável pela manutenção de aplicações de promoção operando 24/7 com alto tráfego e grande volume de transações.
+                            </p>
+                            <ul class="job-bullets">
+                                <li>Desenvolvi soluções escaláveis que reduziram o tempo de setup de novos sistemas promocionais de 7 dias para apenas 4 horas.</li>
+                                <li>Concebi o primeiro sistema de distribuição de números da sorte de alta performance para lidar com picos massivos de requisições.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Buonny -->
+                        <div class="timeline-item" data-techs="php,postgres,mysql,api,git">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-header">
+                                <div class="job-title-company">
+                                    <h3>Buonny Gerenciamento de Riscos</h3>
+                                </div>
+                                <div class="job-meta">
+                                    <span class="job-date">2013 - 2016</span>
+                                    <span class="job-role">Analista Programador Sênior</span>
+                                </div>
+                            </div>
+                            <p class="job-desc">
+                                Desenvolvimento da nova plataforma de monitoramento de cargas em equipe multidisciplinar com mais de 10 programadores.
+                            </p>
+                            <ul class="job-bullets">
+                                <li>Desenvolvi integrações complexas (APIs SOAP e REST) com grandes parceiros (Grupo Pão de Açúcar, LG) para automatização de serviços de monitoramento.</li>
+                                <li>Atuei no suporte a bancos de dados legados corporativos (MS SQL Server, PostgreSQL) utilizando ferramentas de versionamento de banco (Liquibase).</li>
+                                <li>Atuei como mentor de desenvolvedores juniores e estagiários, ajudando a estruturar novos squads.</li>
+                            </ul>
+                        </div>
                     </div>
                 </section>
 
-                <section class="section-spacing">
-                    <h2 class="section-title">Freelancer/Projetos Pessoais</h2>
-                    <div class="mb-4">
-                        <h4 class="fw-bold">TikBot (Projeto Pessoal / Web App)</h4>
-                        <h5 class="text-muted mb-2">Desenvolvedor e Idealizador (2025)</h5>
-                        <p>Idealizei, desenvolvi e implementei o **TikBot**, uma aplicação web focada em automação de atendimento e otimização de processos de comunicação. Projetado para atuar como uma solução escalável para pequenas e médias empresas, o TikBot gerencia interações e otimiza a resposta a clientes através de uma interface web dedicada.</p>
-                        <ul>
-                            <li>Desenvolvimento completo da arquitetura e da lógica de negócios utilizando **PHP e Laravel** para o backend.</li>
-                            <li>Criação de fluxos de conversação inteligentes e personalizáveis para diferentes nichos de mercado, acessíveis via web.</li>
-                            <li>Responsável pela **gestão e configuração de servidores Linux** para hospedagem e otimização da performance do web app.</li>
-                            <li>Otimização de rotinas para garantir alta disponibilidade e processamento rápido das interações.</li>
+                <!-- Projects & Freelance -->
+                <section class="card-glass">
+                    <h2 class="section-title">
+                        <i class="fa-solid fa-laptop-code"></i> Freelancer & Projetos Pessoais
+                    </h2>
+                    
+                    <!-- TikBot -->
+                    <div class="project-item" data-techs="php,laravel,api,ai,javascript,html,css">
+                        <div class="project-title">
+                            <span>TikBot (Gorila Software House)</span>
+                            <a href="https://www.tikbot.com.br" target="_blank" class="project-link">
+                                www.tikbot.com.br <i class="fa-solid fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="project-meta">Desenvolvedor & Co-fundador | 2025</div>
+                        <p class="project-desc">
+                            Aplicação SaaS voltada para automação de atendimento inteligente multicanal, conectando inteligência artificial para interações conversacionais complexas em canais de chat.
+                        </p>
+                        <ul class="job-bullets" style="margin-top: 0.5rem;">
+                            <li>Desenvolvimento backend e integrações de IA utilizando PHP e Laravel.</li>
+                            <li>Conexão de agentes inteligentes de NLP e LLMs para entendimento contextual de mensagens.</li>
+                            <li>Hospedagem e configuração de microsserviços em servidores Linux com alta escalabilidade.</li>
                         </ul>
                     </div>
 
-                    <div class="mb-4">
-                        <h4 class="fw-bold">GTSistema (Projeto Freelancer)</h4>
-                        <h5 class="text-muted mb-2">Desenvolvedor e Consultor (2024 - Atual)</h5>
-                        <p>Responsável pela idealização, desenvolvimento e suporte contínuo do **GTSistema**, uma solução abrangente para gestão de contratos e controle de contas a pagar para a provedora de internet GTS.</p>
-                        <ul>
-                            <li>Criação de um sistema robusto para o gerenciamento eficiente de contratos de serviços.</li>
-                            <li>Implementação de um módulo de contas a pagar, garantindo controle financeiro e pontualidade nos pagamentos.</li>
-                            <li>Integração de **Inteligência Artificial (IA)** para a leitura automatizada de boletos, otimizando o processo de registro e reduzindo erros manuais.</li>
-                            <li>Atendimento e suporte direto à empresa GTS, garantindo a funcionalidade e a adaptação do sistema às necessidades específicas do negócio.</li>
-                            <li>Utilização de **PHP e Laravel** como base para o desenvolvimento do sistema, assegurando escalabilidade e manutenibilidade.</li>
+                    <!-- ACCA -->
+                    <div class="project-item" data-techs="php,laravel,api,ai,postgres">
+                        <div class="project-title">
+                            <span>ACCA (Gorila Software House)</span>
+                        </div>
+                        <div class="project-meta">Co-fundador & Tech Lead | 2025</div>
+                        <p class="project-desc">
+                            Plataforma corporativa projetada para gerenciamento e análise inteligente de dados de processos com soluções de IA embarcadas para tomada de decisões e automatizações avançadas.
+                        </p>
+                        <ul class="job-bullets" style="margin-top: 0.5rem;">
+                            <li>Arquitetura da aplicação utilizando PHP, Laravel e PostgreSQL.</li>
+                            <li>Implementação de rotinas de inteligência artificial para análises automatizadas e automação de tarefas.</li>
+                        </ul>
+                    </div>
+
+                    <!-- GTSistema -->
+                    <div class="project-item" data-techs="php,laravel,api,ai,postgres">
+                        <div class="project-title">
+                            <span>GTSistema</span>
+                        </div>
+                        <div class="project-meta">Desenvolvedor e Consultor Freelancer | 2024 - Atual</div>
+                        <p class="project-desc">
+                            Solução abrangente para gestão de contratos e controle de contas a pagar para a GTS Provedora de Internet.
+                        </p>
+                        <ul class="job-bullets" style="margin-top: 0.5rem;">
+                            <li>Implementação de módulo financeiro integrado com controle de inadimplência e conciliação bancária.</li>
+                            <li>Integração pioneira de Inteligência Artificial para leitura, parsing e preenchimento automatizado de boletos bancários via OCR.</li>
+                            <li>Desenvolvido utilizando stack escalável com PHP, Laravel e banco relacional.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Outros Projetos -->
+                    <div class="project-item" data-techs="javascript,html,css">
+                        <div class="project-title">
+                            <span>Quanto custa o seu Km?</span>
+                            <a href="../custo-km" target="_blank" class="project-link">
+                                Abrir Aplicação <i class="fa-solid fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="project-meta">Projeto Web Freelancer</div>
+                        <p class="project-desc">
+                            Calculadora web interativa para motoristas calcularem de forma realista o custo por quilômetro rodado de seus veículos, considerando depreciação, combustível, manutenção e seguros.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Activities & Community -->
+                <section class="card-glass">
+                    <h2 class="section-title">
+                        <i class="fa-solid fa-users"></i> Atividades e Comunidade
+                    </h2>
+                    <div class="project-item" data-techs="php,laravel">
+                        <div class="project-title">
+                            <span>Grupo de Desenvolvedores PHPi (Parnaíba)</span>
+                        </div>
+                        <div class="project-meta">Membro Ativo e Palestrante | 2024 - Atual</div>
+                        <p class="project-desc">
+                            Participação e organização de eventos da comunidade local com foco na disseminação de conhecimento técnico sobre PHP e Laravel.
+                        </p>
+                        <ul class="job-bullets" style="margin-top: 0.5rem;">
+                            <li>Realização de palestras e workshops práticos para estudantes e novos desenvolvedores da região de Parnaíba.</li>
+                            <li>Mentoria técnica comunitária de fomento à linguagem PHP e boas práticas com Laravel.</li>
                         </ul>
                     </div>
                 </section>
 
-                <section class="section-spacing">
-                    <h2 class="section-title">Atividades e Comunidade</h2>
-                    <div class="mb-4">
-                        <h4 class="fw-bold">Grupo de Desenvolvedores PHPi (Parnaíba)</h4>
-                        <h5 class="text-muted mb-2">Membro Ativo e Palestrante (2024 - Atual)</h5>
-                        <p>Participação ativa e regular no grupo de desenvolvedores PHPi em Parnaíba, com foco no **fomento e disseminação do conhecimento em PHP e Laravel na comunidade local**.</p>
-                        <ul>
-                            <li>Realização de **palestras e workshops** sobre tópicos avançados em PHP e Laravel.</li>
-                            <li>Compartilhamento de experiências e melhores práticas para auxiliar no desenvolvimento profissional de outros programadores.</li>
-                            <li>Colaboração em projetos open source e organização de encontros para troca de conhecimento.</li>
-                            <li>Contribuição para o crescimento da comunidade de tecnologia local, incentivando o desenvolvimento de novos talentos em Parnaíba.</li>
-                        </ul>
-                    </div>
-                </section>
-
-                <!-- 
-                <section class="section-spacing">
-                    <h2 class="section-title">Referências</h2>
-                    <p class="text-center text-muted">Referências disponíveis mediante solicitação.</p>
-                </section> 
-                -->
             </div>
-
-            <div class="col-lg-4">
-                <section class="section-spacing p-3 bg-light rounded shadow-sm">
-                    <h4 class="section-title text-center">Educação</h4>
-                    <div class="text-center">
-                        <div class="text-muted">2011</div>
-                        <div class="fw-bold text-dark">Bacharelado em Sistemas de Informação</div>
-                        <div class="text-muted">FATEPI - Faculdade de Tecnologia do Piauí</div>
-                    </div>
-                    <hr class="my-3">
-                    <div class="text-center mt-3">
-                        <div class="text-muted">2018</div>
-                        <div class="fw-bold text-dark">Scrum Master</div>
-                        <div class="text-muted">Impacta Tecnologia</div>
-                    </div>
-                    <div class="text-center mt-3">
-                        <div class="text-muted">2015</div>
-                        <div class="fw-bold text-dark">MySQL PL/SQL</div>
-                        <div class="text-muted">Impacta Tecnologia</div>
-                    </div>
-                    <div class="text-center mt-3">
-                        <div class="text-muted">2015</div>
-                        <div class="fw-bold text-dark">Desenvolvimento Mobile com PhoneGap</div>
-                        <div class="text-muted">Curso Online / Certificação</div>
-                    </div>
-                </section>
-
-                <section class="section-spacing p-3 bg-light rounded shadow-sm">
-                    <h4 class="section-title text-center">Redes</h4>
-                    <div class="text-start">
-                        <div class="mb-2">
-                            <a href="https://www.linkedin.com/in/george-rotteny" target="_blank" class="text-decoration-none text-dark">
-                                <i class="fa-brands fa-linkedin me-2"></i> LinkedIn
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://github.com/rotteny" target="_blank" class="text-decoration-none text-dark">
-                                <i class="fa-brands fa-github me-2"></i> GitHub
-                            </a>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="section-spacing p-3 bg-light rounded shadow-sm">
-                    <h4 class="section-title text-center">Projetos</h4>
-                    <div class="text-start">
-                        <div class="mb-2"> <a href="https://www.tikbot.com.br" target="_blank" class="text-decoration-none text-dark">
-                                <i class="fa-solid fa-robot me-2"></i> TikBot (Web App)
-                            </a>
-                        </div>
-                        <div>
-                            <a href="../custo-km" target="_blank" class="text-decoration-none text-dark">
-                                <i class="fa-solid fa-car me-2"></i> Quanto custa o seu Km?
-                            </a>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="section-spacing p-3 bg-light rounded shadow-sm">
-                    <h4 class="section-title text-center">Idiomas</h4>
-                    <div class="text-start text-dark">
-                        <ul class="list-unstyled">
-                            <li class="mb-2">Português (nativo)</li>
-                            <li class="mb-2">Inglês (avançado)</li>
-                        </ul>
-                    </div>
-                </section>
-
-                <section class="section-spacing p-3 bg-light rounded shadow-sm">
-                    <h4 class="section-title text-center">Habilidades Técnicas</h4>
-                    <div class="text-start text-dark">
-                        <ul class="list-unstyled">
-                            <li class="mb-2">PHP</li>
-                            <li class="mb-2">HTML</li>
-                            <li class="mb-2">CSS</li>
-                            <li class="mb-2">Javascript</li>
-                            <li class="mb-2">**Laravel**</li>
-                            <li class="mb-2">Mysql</li>
-                            <li class="mb-2">PostgreSQL</li>
-                            <li class="mb-2">Node.js</li>
-                            <li class="mb-2">Webix</li>
-                            <li class="mb-2">Metodologias Ágeis (Scrum, Kanban)</li>
-                            <li class="mb-2">Git/GitHub</li>
-                            <li class="mb-2">RESTful APIs / SOAP</li>
-                        </ul>
-                    </div>
-                </section>
-            </div>
+            
         </div>
 
-        <div class="row mt-5 py-3 text-center bg-dark text-white rounded">
-            <div class="col">
-                <small>Copyright 2024 | Todos os direitos reservados</small>
-            </div>
+        <!-- Footer -->
+        <footer>
+            <p>Copyright 2026 | Desenvolvido por George Rotteny. Todos os direitos reservados.</p>
+        </footer>
+
+    </main>
+
+    <!-- Toast Notification Element -->
+    <div class="toast-container">
+        <div id="copyToast" class="toast-alert">
+            <i class="fa-solid fa-circle-check"></i>
+            <span id="toastMessage">Copiado para a área de transferência!</span>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- JavaScript Interations -->
+    <script>
+        // Copy to clipboard function
+        function copyText(text, label) {
+            navigator.clipboard.writeText(text).then(() => {
+                const toast = document.getElementById('copyToast');
+                const msg = document.getElementById('toastMessage');
+                msg.textContent = `${label} copiado para a área de transferência!`;
+                
+                toast.classList.add('show');
+                
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                }, 2500);
+            }).catch(err => {
+                console.error('Erro ao copiar texto: ', err);
+            });
+        }
+
+        // Skill category filtering
+        function filterSkills(category) {
+            // Update filter buttons active class
+            const buttons = document.querySelectorAll('.filter-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            // Find clicked button using event/argument
+            const clickedBtn = Array.from(buttons).find(btn => 
+                btn.getAttribute('onclick').includes(`'${category}'`)
+            );
+            if (clickedBtn) clickedBtn.classList.add('active');
+
+            // Filter tags
+            const tags = document.querySelectorAll('.skill-tag');
+            tags.forEach(tag => {
+                const tagCat = tag.getAttribute('data-category');
+                if (category === 'all' || tagCat === category) {
+                    tag.style.display = 'inline-block';
+                } else {
+                    tag.style.display = 'none';
+                }
+            });
+        }
+
+        // Dynamic highlights
+        let activeHighlightTech = null;
+
+        function toggleTechHighlight(tech) {
+            const skillTags = document.querySelectorAll('.skill-tag');
+            const items = document.querySelectorAll('.timeline-item, .project-item');
+            
+            // If the clicked tech was already active, reset all highlights
+            if (activeHighlightTech === tech) {
+                skillTags.forEach(tag => tag.classList.remove('highlighted'));
+                items.forEach(item => {
+                    item.classList.remove('highlighted-card');
+                    item.classList.remove('dimmed');
+                });
+                activeHighlightTech = null;
+                return;
+            }
+
+            activeHighlightTech = tech;
+
+            // Highlight the selected skill tag, remove from others
+            skillTags.forEach(tag => {
+                if (tag.getAttribute('data-tech') === tech) {
+                    tag.classList.add('highlighted');
+                } else {
+                    tag.classList.remove('highlighted');
+                }
+            });
+
+            // Highlight timeline & projects carrying this technology
+            items.forEach(item => {
+                const techsList = item.getAttribute('data-techs') || '';
+                const techsArray = techsList.split(',');
+                
+                if (techsArray.includes(tech)) {
+                    item.classList.add('highlighted-card');
+                    item.classList.remove('dimmed');
+                } else {
+                    item.classList.remove('highlighted-card');
+                    item.classList.add('dimmed');
+                }
+            });
+        }
+    </script>
 </body>
 </html>
